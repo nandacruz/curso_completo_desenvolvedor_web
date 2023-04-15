@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+      <title>Curso Completo de Desenvolvedor Web</title>
+</head>
+<body>
+      <form method="POST" action="form.php">
+            <div class="form-group" >
+                  <label for="nome">Nome</label>
+                  <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o seu nome" required>
+            </div>
+            
+            <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="form-group">
+                  <label for="nascimento">Nascimento</label>
+                  <!--O "min" e "max" servem para definir datas limites que o usuário pode selecionar-->
+                  <input type="date" name="nascimento" id="nascimento" min="2016-01-01" max="2016-01-15" class="form-control" required>
+            </div>
+
+            <!--radio
+            <div class="form-group">
+                  <label>Sexo</label>
+                  <input type="radio" name="sexo" id="masculino" required>
+                  <label for="masculino">Masculino</label>
+                  
+                  <input type="radio" name="sexo" id="feminino" required>
+                  <label for="feminino">Feminino</label>
+            </div>
+            -->
+
+            <!--radio-->
+            <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sexo" id="masculino">
+                  <label class="form-check-label" for="masculino">Masculino</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sexo" id="feminino" checked>
+                  <label class="form-check-label" for="feminino">Feminino</label>
+            </div>
+
+            <!--Checkbox-->
+            <!--Checked serve para deixar o campo pré marcado-->
+            <div class="form-group">
+                  <label for="li">Li o contrato</label>
+                  <input type="checkbox" name="li" id="li" checked required>
+            </div>
+
+            <div class="form-group">
+                  <label for="volume">Volume</label>
+                  <input type="range" name="volume" id="volume" min="0" max="100" value="25" required>
+            </div>
+
+            <!--Meter/Bateria-->
+            <div class="form-group">
+                  <label for="meter">Bateria</label>
+                  <meter min="0" max="100" low="15" value="50">50</meter>
+            </div>
+
+            <!--Progress-->
+            <div class="form-group">
+                  <label for="meter">Carregando</label>
+                  <progress min="0" max="100" value="60">60%</progress>
+            </div>
+
+            <!--Ano-->
+            <!--step serve para pular unidades-->
+            <div class="form-group">
+                  <label for="ano">Ano Fabricação</label>
+                  <input type="number" name="ano" id="ano" min="1920" max="2023" step="20" class="form-control">
+            </div>
+
+            <!--Cor-->          
+            <div class="form-group">
+                  <label for="color">Cor</label>
+                  <input type="color" name="cor" id="cor" class="form-control">
+            </div>
+
+            <!--URL-->          
+            <div class="form-group">
+                  <label for="url">URL</label>
+                  <input type="url" name="url" id="url" class="form-control">
+            </div>
+
+            <!--Search-->          
+            <div class="form-group">
+                  <label for="busca">Busca</label>
+                  <input type="search" name="search" id="search" class="form-control">
+            </div>
+
+            <!--Textarea-->          
+            <div class="form-group">
+                  <label for="mensagem">Mensagem</label>
+                  <textarea type="mensagem" name="mensagem" id="mensagem" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+
+            <!--Select-->          
+            <div class="form-group">
+                  <label for="estados">Estados</label>
+                  <select name="estados" id="estados">
+                        <option value="SP">São Paulo</option>
+                        <option value="MG" selected>Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                  </select>
+            </div>
+
+            <div>
+                  <button class="btn btn-primary" type="submit">Cadastrar</button>
+            </div>
+      </form>
+
+      
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
